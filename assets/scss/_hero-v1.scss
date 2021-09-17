@@ -38,6 +38,13 @@
     width: 50%;
     background: #fff;
     padding: 32px;
+    position: relative;
+    .shape {
+        position: absolute;
+        max-width: 60px;
+        right: 30px;
+        top: 30px;
+    }
     // Title
     .title {
         img {
@@ -212,6 +219,11 @@
     }
     .hero-v1-content {
         padding: 20px;
+        .shape {
+            top: 20px;
+            right: 20px;
+            max-width: 50px;
+        }
         .title {
             h2 {
                 font-size: 20px;

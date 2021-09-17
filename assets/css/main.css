@@ -425,6 +425,13 @@ label {
   width: 50%;
   background: #fff;
   padding: 32px;
+  position: relative;
+}
+.hero-v1-content .shape {
+  position: absolute;
+  max-width: 60px;
+  right: 30px;
+  top: 30px;
 }
 .hero-v1-content .title img {
   max-width: 90px;
@@ -594,6 +601,11 @@ label {
 
   .hero-v1-content {
     padding: 20px;
+  }
+  .hero-v1-content .shape {
+    top: 20px;
+    right: 20px;
+    max-width: 50px;
   }
   .hero-v1-content .title h2 {
     font-size: 20px;
