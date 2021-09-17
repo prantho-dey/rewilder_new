@@ -1,5 +1,6 @@
 (function ($) {
 
+	// Range & Slider 
     $('#rangeInput').on('change', function(){
         const amount = $(this).val();
         $('.selected-amount').html(amount);
@@ -52,6 +53,17 @@
         selector.style.left = this.value + "%";
         progressbar.style.width = this.value + "%";  
     }
+
+	// Connect Wallet
+	$('.header-button').on("click", function() {
+		$('.connect-wallet-popup').addClass('active');
+		$("body").addClass('overlay');
+	});
+	$('.connect-wallet-close').on("click", function() {
+		$('.connect-wallet-popup').removeClass('active');
+		$("body").removeClass('overlay');
+	});
+
 
 
 
