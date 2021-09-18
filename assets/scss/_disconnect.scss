@@ -1,0 +1,46 @@
+
+.disconnect-header {
+    .disconnect-button {
+        padding: 12px;
+        .disconnec {
+            text-align: right;
+            margin-top: 15px;
+            a {
+                letter-spacing: 0.01em;
+                color: #778C7E;
+                font-family: 'Airbnb Cereal App Bold';
+                font-size: 14px;
+                line-height: 21px;
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+// Popup 
+.disconnect-error-popup {
+    .message {
+        a {
+            background: #F5EBEB;
+            color: #990808;
+            i {
+                color: #990808;
+            }
+        }
+    }
+}
+
+// Responsive
+@media screen and (max-width: 575px) {
+    .disconnect-header {
+        .disconnect-button {
+            padding: 10px;
+            .disconnec {
+                margin-top: 10px;
+            }
+        }
+    }
+}

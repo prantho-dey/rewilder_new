@@ -1,5 +1,13 @@
 (function ($) {
 
+
+	// Hide Funcation
+	$('.update-close').on("click", function(){
+		$(this).parent().hide(200);
+	});
+
+
+
 	// Range & Slider 
     $('#rangeInput').on('change', function(){
         const amount = $(this).val();
@@ -46,13 +54,10 @@
     var selector = document.getElementById('selector');
     var progressbar = document.getElementById('Progressbar');
 
-    // selector.style.left = this.value + "%";
-    // progressbar.style.width = this.value + "%";
-
     slider.onchange = function () {
         selector.style.left = this.value + "%";
         progressbar.style.width = this.value + "%";  
-    }
+    };
 
 	// Connect Wallet
 	$('.header-button').on("click", function() {
@@ -64,7 +69,17 @@
 		$("body").removeClass('overlay');
 	});
 
+	// Connect Wallet
+	$('.hero-v1-btn,.connect-error-button').on("click", function() {
+		$('.sign-transaction-popup,.connect-error-popup').addClass('active');
+		$("body").addClass('overlay');
+	});
+	$('.sign-close,.sign-close-btn,.connect-error-close,.connect-error-close-btn').on("click", function() {
+		$('.sign-transaction-popup,.connect-error-popup').removeClass('active');
+		$("body").removeClass('overlay');
+	});
 
+	
 
 
 })(jQuery);

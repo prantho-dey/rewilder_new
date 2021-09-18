@@ -185,7 +185,8 @@
 
 // Footer 
 .footer {
-    padding-bottom: 20px;
+    padding: 20px 0px;
+    margin-bottom: auto;
     p {
         color: #3F6947;
         font-size: 14px;
@@ -215,7 +216,7 @@
 
 @media screen and (max-width: 575px) {
     .hero-v1-area {
-        padding: 36px 0px 50px;
+        padding: 25px 0px 30px;
     }
     .hero-v1-content {
         padding: 20px;

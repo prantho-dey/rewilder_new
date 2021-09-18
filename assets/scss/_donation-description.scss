@@ -1,0 +1,277 @@
+
+.description-area {
+    padding: 40px;
+}
+
+.description-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.description-thumbnial {
+    width: 50%;
+    text-align: center;
+    .thumb {
+        max-width: 380px;
+        margin: 80px auto 0px;
+
+        figcaption {
+            color: #D4CFC7;
+            display: block;
+            font-size: 16px;
+            line-height: 21px;
+            margin-top: 55px;
+        }
+    }
+}
+.description-content {
+    width: 50%;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+    padding: 40px 50px 10px;
+    position: relative;
+    .shape {
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        max-width: 90px;
+    }
+    .title {
+        span {
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 18px;
+            font-family: 'Airbnb Cereal App Extra Bold';
+            color: $theme-color;
+        }
+        h2 {
+            color: #fff;
+            font-family: 'Airbnb Cereal App Black';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 42px;
+            margin: 0;
+            padding: 0;
+            margin-top: 8px;
+        }
+    }
+    .option {
+        padding: 40px 0px;
+        border-bottom: 2px solid #202D24;
+        .single-option {
+            display: flex;
+            .option-img {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #1B201C;
+                border-radius: 50%;
+                margin-right: 12px;
+            }
+            .option-title {
+                span {
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-weight: 700;
+                    font-family: 'Airbnb Cereal App Bold';
+                    color: #758078;
+                    display: block;
+                }
+                h4 {
+                    font-size: 18px;
+                    line-height: 23px;
+                    font-family: 'Airbnb Cereal App Bold';
+                    color: #FAF8F6;
+                    margin: 0;
+                    padding: 0;
+                    margin-top: 3px;
+                }
+            }
+        }
+        .top-option {
+            display: flex;
+            .single-option {
+                margin-right: 55px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .bottom-option {
+            margin-top: 30px;
+        }
+    }
+}
+
+.donation-updates {
+    margin-top: 40px;
+    .single-updates {
+        background: #162018;
+        border-radius: 8px;
+        padding: 16px 45px 16px 16px;
+        margin-bottom: 15px;
+        display: flex;
+        position: relative;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .update-close {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            cursor: pointer;
+        }
+        .update-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #0D0F09;
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            img {
+                width: 16px;
+            }
+        }
+        .update-content {
+            padding-left: 56px;
+            span {
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 16px;
+                font-family: 'Airbnb Cereal App Bold';
+                color: #758078;
+            }
+            h4 {
+                font-size: 14px;
+                line-height: 20px;
+                color: #F7FAF8;
+                margin: 0;
+                padding: 0;
+                margin-top: 8px;
+                display: block;
+                max-width: 426px;
+                a {
+                    color: $theme-color;
+                    text-decoration: underline;
+                    margin-left: 5px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+
+// Responsive
+@media screen and (max-width: 1199px){
+    .description-thumbnial {
+        width: 30%;
+        margin-right: 30px;
+    }
+    .description-content {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .description-wrapper {
+        flex-direction: column;
+    }
+    .description-thumbnial {
+        width: 100%;
+        margin-right: 0px;
+        .thumb {
+            margin: 50px auto 0px;
+            figcaption {
+                margin-top: 30px;
+            }
+        }
+    }
+    .description-content {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .description-area {
+        padding: 20px;
+    }
+    .description-content {
+        padding: 25px 25px 10px;
+    }
+}
+@media screen and (max-width: 575px){
+    .description-area {
+        padding: 0px;
+    }
+    .description-content {
+        padding: 20px 15px 10px;
+    }
+    .description-thumbnial {
+        .thumb {
+            margin: 30px auto 0px;
+            figcaption {
+                margin-top: 20px;
+                font-size: 14px;
+            }
+        }
+    }
+    .description-content {
+        .shape {
+            top: 10px;
+            right: 10px;
+            max-width: 60px;
+        }
+        .title {
+            h2 {
+                font-size: 24px;
+                line-height: 30px;
+                margin-top: 5px;
+            }
+        }
+        .option {
+            padding: 30px 0px;
+            .single-option {
+                flex-direction: column;
+                .option-title {
+                    h4 {
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-top: 3px;
+                    }
+                }
+                .option-img {
+                    margin-right: 0;
+                    margin-bottom: 6px;
+                }
+            }
+            .top-option {
+                .single-option {
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+
+    .donation-updates {
+        margin-top: 25px;
+        .single-updates {
+            flex-direction: column;
+            padding: 15px;
+            .update-icon {
+                position: unset;
+                margin-bottom: 6px;
+            }
+            .update-content {
+                padding-left: 0;
+            }
+        }
+    }
+}

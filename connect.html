@@ -20,7 +20,7 @@
 <body>
 
     <!-- Header Start Here -->
-    <header class="header-area-v1">
+    <header class="header-area-v1 connect-header">
         <div class="container-fluid">
             <div class="header-v1-wrapper">
                 <div class="logo">
@@ -29,8 +29,8 @@
                         <img class="small-logo" src="assets/img/logo/small-logo.svg" alt="logo">
                     </a>
                 </div>
-                <div class="header-button">
-                    <a href="#">Connect wallet</a>
+                <div class="connect-button">
+                    <a href="#">24.625 ETH <span><img src="assets/img/icon/amount-icon.svg" alt="icon"> 0xeC71..BDbC</span></a>
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@
                         <h4 class="view-amount">You are donating<span class="selected-amount">1</span> <img src="assets/img/icon/eth.svg" alt="no icon found"> ETH</h4>
                         <p>We estimate this will help buy ~18 hectares. <i class="fas fa-question-circle icon-color"></i></p>
                     </div>
-                    <div class="hero-v1-btn">
+                    <div class="hero-v1-btn connect-error-button">
                         <a class="btn-theme" href="#">Donate and mint your NFT</a>
                     </div>
                 </div>
@@ -100,45 +100,20 @@
     </section>
     <!-- Hero V1 Area End Here -->
 
-    <!-- Connect Wallet Popup Start Here -->
-    <div class="container">
-        <div class="connect-wallet-popup">
-            <div class="connect-wallet-close">
-                <i class="fal fa-times"></i>
-            </div>
-            <h4>Connect to a wallet</h4>
-            <div class="connect-option">
-                <a href="#">
-                    <img src="assets/img/icon/metamask-icon.svg" alt="logo">
-                    <span>Metamask</span>
-                </a>
-                <a href="#">
-                    <img src="assets/img/icon/wallet-connect-icon.svg" alt="logo">
-                    <span>WalletConnect</span>
-                </a>
-            </div>
-            <p>By connecting a wallet, you agree to Rewilder’s <a href="#">Terms of Service</a> and <a href="#">Privacy Policy.</a></p>
+    <!-- Connect Error Popup Start Here -->
+    <div class="connect-error-popup">
+        <div class="connect-error-close">
+            <i class="fal fa-times"></i>
+        </div>
+        <h4>Error</h4>
+        <div class="message">
+            <a href="#"><i class="fas fa-exclamation-circle"></i>insufficient balance to pay for gas</a>
+        </div>
+        <div class="connect-error-close-btn">
+            <a href="#">close</a>
         </div>
     </div>
-    <!-- Connect Wallet Popup End Here -->
-
-    <!-- Sign Transcation Popup Start Here -->
-    <div class="container">
-        <div class="sign-transaction-popup">
-            <div class="sign-close">
-                <i class="fal fa-times"></i>
-            </div>
-            <h4>Sign transaction</h4>
-            <div class="circle-shape">
-                <img src="assets/img/shape/circle-shape.svg" alt="shape">
-            </div>
-            <p>Please, sign transaction in your wallet</p>
-            <div class="sign-close-btn">
-                <a href="#">close</a>
-            </div>
-        </div>
-    </div>
-    <!-- Sign Transcation Popup End Here -->
+    <!-- Connect Error Popup End Here -->
 
     <!-- Footer Area Strt Here -->
     <div class="footer text-center">
