@@ -322,7 +322,7 @@ label {
 }
 
 .header-v1-wrapper {
-  padding: 25px 10px;
+  padding: 30px 10px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -379,7 +379,6 @@ label {
 
 @media screen and (max-width: 767px) {
   .header-v1-wrapper {
-    padding: 15px 10px;
     justify-content: space-between;
   }
 
@@ -393,7 +392,7 @@ label {
 }
 @media screen and (max-width: 575px) {
   .header-v1-wrapper {
-    padding: 15px 0px;
+    padding: 30px 0px;
     justify-content: space-between;
   }
 
@@ -485,11 +484,11 @@ label {
   width: 100%;
 }
 .hero-v1-content .tree-group .single-tree .tree-img.meduum-tree {
-  max-width: 60px;
+  max-width: 55px;
   margin: 0 auto;
 }
 .hero-v1-content .tree-group .single-tree .tree-img.small-tree {
-  max-width: 30px;
+  max-width: 20px;
   margin: 0 auto;
 }
 .hero-v1-content .tree-group .single-tree .tree-title {
@@ -504,6 +503,21 @@ label {
 }
 .hero-v1-content .range-input {
   position: relative;
+  z-index: 1;
+}
+.hero-v1-content .range-input::before, .hero-v1-content .range-input::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 7px;
+  background-color: rgba(63, 105, 71, 0.2);
+  top: 43%;
+}
+.hero-v1-content .range-input::before {
+  left: 33.3333%;
+}
+.hero-v1-content .range-input::after {
+  left: 66.6666%;
 }
 .hero-v1-content .range-input #rangeInput {
   -webkit-appearance: none;
@@ -553,6 +567,18 @@ label {
   top: 9px;
   left: 0;
   z-index: 1;
+}
+.hero-v1-content .range-value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.hero-v1-content .range-value span {
+  font-size: 11px;
+  line-height: 1;
+  color: #8C8D91;
+  font-family: "Airbnb Cereal App Medium";
 }
 .hero-v1-content .donating-value {
   margin-top: 60px;
@@ -616,10 +642,26 @@ label {
   .hero-v1-content {
     width: 100%;
   }
+  .hero-v1-content .range-input #selector {
+    bottom: -2px;
+    width: 30px;
+    height: 30px;
+  }
+  .hero-v1-content .range-input #selector .SelectBtn {
+    height: 13px;
+    width: 13px;
+  }
+  .hero-v1-content .range-value {
+    margin-top: 10px;
+  }
 }
 @media screen and (max-width: 575px) {
   .hero-v1-area {
     padding: 25px 0px 30px;
+  }
+
+  .hero-v1-thumb p {
+    padding: 15px 30px;
   }
 
   .hero-v1-content {
@@ -643,7 +685,9 @@ label {
   }
   .hero-v1-content .donating-value h4 {
     font-size: 18px;
-    line-height: 1;
+    line-height: 1.5;
+    max-width: 170px;
+    margin: 0 auto;
   }
   .hero-v1-content .hero-v1-btn {
     margin-top: 25px;
@@ -1110,7 +1154,7 @@ label {
   width: 50%;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 16px;
-  padding: 40px 50px 10px;
+  padding: 40px 50px 0px;
   position: relative;
 }
 .description-content .shape {
@@ -1186,6 +1230,19 @@ label {
 
 .donation-updates {
   margin-top: 40px;
+  height: 265px;
+  overflow-y: auto;
+  padding-right: 20px;
+  margin-right: -40px;
+}
+.donation-updates::-webkit-scrollbar {
+  width: 6px;
+}
+.donation-updates::-webkit-scrollbar-track {
+  background-color: #c7c7c7;
+}
+.donation-updates::-webkit-scrollbar-thumb {
+  background: #388447;
 }
 .donation-updates .single-updates {
   background: #162018;
@@ -1285,6 +1342,11 @@ label {
   .description-content {
     padding: 25px 25px 10px;
   }
+
+  .donation-updates {
+    padding-right: 10px;
+    margin-right: -15px;
+  }
 }
 @media screen and (max-width: 575px) {
   .description-area {
@@ -1334,6 +1396,8 @@ label {
 
   .donation-updates {
     margin-top: 25px;
+    padding-right: 6px;
+    margin-right: -10px;
   }
   .donation-updates .single-updates {
     flex-direction: column;
